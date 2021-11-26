@@ -5,7 +5,9 @@
   /* ====== Hamburger Open Styles ====== */
  
   &.open {
-  
+
+    .header__menu {
+
       > span:first-child {
         transform: rotate(45deg);
       }
@@ -17,16 +19,22 @@
       > span:last-child {
         transform: rotate(-45deg);
       }
+    }
     
   } /*  open */
 
   .overlay {
+    // display: none;
+    opacity: 0;
     position: fixed;
     top: 3.75rem;
     left: 0px;
     right: 0px;
     bottom: 0px;
     background-image: linear-gradient($darkBlue, transparent);
+    // animation: fade-out 300ms ease-in-out forwards;
+
+  
   } /* overlay */
    
   nav {
