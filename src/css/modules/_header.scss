@@ -93,11 +93,11 @@
   }
 } /*  header */
  
-// .overlay {
-//   position: fixed;
-//   top: 3.75rem;
-//   left: 0px;
-//   right: 0px;
-//   bottom: 0px;
-//   background-image: linear-gradient($darkBlue, transparent);
-// } /* overlay */
+.overlay {
+  position: fixed;
+  top: 3.75rem;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: linear-gradient($darkBlue, transparent);
+} /* overlay */
