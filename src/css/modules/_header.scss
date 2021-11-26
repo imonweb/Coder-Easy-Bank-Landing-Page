@@ -1,6 +1,33 @@
  
 /* ====== Header ====== */
 .header {
+
+  /* ====== Hamburger Open Styles ====== */
+ 
+  &.open {
+  
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+      
+      > span:nth-child(2){
+        opacity: 0;
+      }
+      
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    
+  } /*  open */
+
+  .overlay {
+    position: fixed;
+    top: 3.75rem;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-image: linear-gradient($darkBlue, transparent);
+  } /* overlay */
    
   nav {
     padding: 1rem 1.5rem;
@@ -29,21 +56,7 @@
       }
     } /*  span */
 
-    &.open {
- 
-        > span:first-child {
-          transform: rotate(45deg);
-        }
-        
-        > span:nth-child(2){
-          opacity: 0;
-        }
-        
-        > span:last-child {
-          transform: rotate(-45deg);
-        }
-      
-    } /*  open */
+    
   } /* mobile menu */
 
   &__links {
@@ -93,11 +106,4 @@
   }
 } /*  header */
  
-.overlay {
-  position: fixed;
-  top: 3.75rem;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  background-image: linear-gradient($darkBlue, transparent);
-} /* overlay */
+ 
