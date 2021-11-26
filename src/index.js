@@ -9,4 +9,5 @@ dom.i2svg()
 
 // library.add(faCheck);
 dom.watch();
+import './css/main.scss';
 import './js/app.js';
