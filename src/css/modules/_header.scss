@@ -6,7 +6,7 @@
  
   &.open {
 
-    .header__menu {
+    .header__toggle {
 
       > span:first-child {
         transform: rotate(45deg);
@@ -49,7 +49,7 @@
     }
   }
 
-  &__menu {
+  &__toggle {
 
     > span {
       display: block;
