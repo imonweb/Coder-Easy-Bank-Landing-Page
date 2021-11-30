@@ -129,15 +129,15 @@
     } /* a */
   } /*  links */
 
-  &__cta {
-    font-size: $font-sm;
-    color: $white;
-    transition: opacity 300ms ease-in-out;
+  // &__cta {
+  //   font-size: $font-sm;
+  //   color: $white;
+  //   transition: opacity 300ms ease-in-out;
 
-    &:hover {
-      opacity: 0.75;
-    }
-  }
+  //   &:hover {
+  //     opacity: 0.75;
+  //   }
+  // }
 } /*  header */
  
  
