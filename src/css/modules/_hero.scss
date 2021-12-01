@@ -6,6 +6,7 @@
     @include breakpoint-up(large){
       display: flex;
       align-items: center;
+      // overflow: hidden;
     }
   }
 
@@ -18,6 +19,10 @@
       background-position: center center;
       min-height: 17.5rem;
 
+      @include breakpoint-up(medium){
+        min-height: 25rem;
+      }
+
       @include breakpoint-up(large){
         flex: 3;
         order: 2;
@@ -28,21 +33,31 @@
       }
 
       &::before, &::after {
-        border: 1px solid salmon;
+        // border: 1px solid salmon;
       }
 
       &::before {
+        /*
         content: "";
         position: absolute;
-        height: 100%;
+        // height: 100%;
         width: 100%;
         background-image: url('../images/bg-intro-desktop.svg');
-        background-size: 93%;
+        // background-size: 93%;
         background-repeat: no-repeat;
         background-position: center bottom;
+        */
 
         @include breakpoint-up(large){
-          width: 150%;
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-image: url('../images/bg-intro-desktop.svg');
+          // background-size: 93%;
+          background-size: 122%;
+          background-repeat: no-repeat;
+          background-position: 0% 83%;
         }
       }
 
@@ -55,6 +70,21 @@
         background-size: 93%;
         background-repeat: no-repeat;
         background-position: center bottom;
+
+        // opacity: 0;
+
+        @include breakpoint-up(large){
+          width: 120%;
+          height: 122%;
+          left: 22%;
+          background-size: 94%;
+          background-position: center 150%;
+
+         
+          // height: 128%;
+          // left: 28%;
+          
+        }
       }
 
       
