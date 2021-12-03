@@ -55,7 +55,7 @@
         @include breakpoint-up(large){
           content: "";
           position: absolute;
-          width: 100%;
+          width: 150%;
           height: 100%;
           background-image: url('../images/bg-intro-desktop.svg');
           // background-size: 93%;
@@ -99,21 +99,21 @@
         text-align: left;
       }
 
-      h1 {
-        font-weight: 300;
-        font-size: 2.31rem;
-        line-height: 1.15;
-        color: $darkBlue; 
-        margin-bottom: 1.5rem;
+    //   h1 {
+    //     font-weight: 300;
+    //     font-size: 2.31rem;
+    //     line-height: 1.15;
+    //     color: $darkBlue; 
+    //     margin-bottom: 1.5rem;
 
-        @include breakpoint-up(large){
-          font-size: $font-xlg;
-        }
-      }
+    //     @include breakpoint-up(large){
+    //       font-size: $font-xlg;
+    //     }
+    //   }
 
-      p {
-        line-height: 1.5;
-      }
+    //   p {
+    //     line-height: 1.5;
+    //   }
     }
 }
  
